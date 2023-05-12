@@ -34,12 +34,14 @@ O objetivo é sobrecarregar o servidor com um grande número de conexões simult
    
 ## Testes realizados
 
-Teste executado com 100000 clientes e mensagens de 1000 bytes.
+Teste executado com 1000 clientes enviando 50 msg cada e mensagens de 1000 bytes.
 ### Recursos utilizados
 * CPU: Intel Core i5-10300H 
 * RAM: 32 GB
 
-![Teste 1](./images/teste1.png)
+![Graph](https://user-images.githubusercontent.com/65198889/236650541-d576d77e-be3a-48e3-8131-67aa5394f153.png)
+
+OBS: Bug ainda não resolvido onde a leitura do processador quando a picos de processamento fica totalmente errada, como podemos ver no grafico acima bantendo 200 % de uso sendo que na realidade este processo consumiu 30 % de uso na cpu que somando a mais 30% por parte do processo do Cliente deu um total de 60 % de uso total.
 
 ## Observações
 
