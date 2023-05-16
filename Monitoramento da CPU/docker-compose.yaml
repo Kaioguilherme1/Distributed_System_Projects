@@ -1,5 +1,3 @@
-#observação esse container foi executado em uma maquina virtual com o ip 192.168.20.4
-
 version: '3.8'
 services:
   rabbitmq:
@@ -10,5 +8,3 @@ services:
     environment:
       RABBITMQ_USERNAME: manager
       RABBITMQ_PASSWORD: 1234
-      RABBITMQ_USERNAMES: Consumer,Producer # cria os usuários consumer e producer
-      RABBITMQ_PASSWORDS: 1234,1234 # define as senhas dos usuários

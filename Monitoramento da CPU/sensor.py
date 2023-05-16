@@ -28,7 +28,7 @@ while True:
     cpu_temp =  psutil.sensors_temperatures()['coretemp'][0].current
     # enviar a temperatura para a queue
     channel.basic_publish(exchange='', routing_key='cpu_temp', body=str(cpu_temp))
-    print(f"Enviado {cpu_temp} para a queue 'cpu_temp' no RabbitMQ {HOST}:{PORT}")
+    print(f"Enviado {cpu_temp} para a queue 'cpu_temp' pro RabbitMQ {HOST}:{PORT}")
     time.sleep(0.5)
     os.system('clear')
 
